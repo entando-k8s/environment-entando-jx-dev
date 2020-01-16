@@ -9,6 +9,8 @@ pipelineConfig:
         - name: pr-checks
           options:
             containerOptions:
+              name: ""
+              resources: {}
               volumeMounts:
               - mountPath: /builder/home/.jx/localSecrets/currentCluster
                 name: local-secrets
@@ -40,10 +42,20 @@ pipelineConfig:
         environment:
         - name: DEPLOY_NAMESPACE
           value: jx
+        - name: GIT_AUTHOR_NAME
+          value: entando-jx
+        - name: GIT_COMMITTER_NAME
+          value: entando-jx
+        - name: GIT_AUTHOR_EMAIL
+          value: entando.build.user@gmail.com
+        - name: GIT_COMMITTER_EMAIL
+          value: entando.build.user@gmail.com
         stages:
         - name: release
           options:
             containerOptions:
+              name: ""
+              resources: {}
               volumeMounts:
               - mountPath: /builder/home/.jx/localSecrets/currentCluster
                 name: local-secrets
@@ -140,13 +152,10 @@ pipelineConfig:
             command: jx
             dir: /workspace/source/systems/external-dns
             name: install-external-dns
-          - args:
-            - apply
-            - --wait
-            - --validate=false
-            - -f
-            - https://raw.githubusercontent.com/jetstack/cert-manager/release-0.11/deploy/manifests/00-crds.yaml
-            command: kubectl
+          - command: 'curl -sL https://raw.githubusercontent.com/jetstack/cert-manager/release-0.11/deploy/manifests/00-crds.yaml
+              | sed -e ''s/preserveUnknownFields: false/preserveUnknownFields: true/g''
+              | sed -e ''s/type: object//g''  | kubectl apply --wait --validate -f
+              -'
             dir: /workspace/source
             env:
             - name: DEPLOY_NAMESPACE

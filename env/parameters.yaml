@@ -1,0 +1,15 @@
+adminUser:
+  password: local:entando-jx/adminUser:password
+  username: admin
+docker:
+  email: entando.build.user@gmail.com
+  password: local:entando-jx/docker:password
+  url: https://index.docker.io/v1/
+  username: entandobuilduser
+enableDocker: true
+pipelineUser:
+  email: entando.build.user@gmail.com
+  token: local:entando-jx/pipelineUser:token
+  username: entando-jx
+prow:
+  hmacToken: local:entando-jx/prow:hmacToken
