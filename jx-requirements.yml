@@ -13,7 +13,7 @@ cluster:
   gitServer: https://github.com
   namespace: jx
   provider: openshift
-  registry: docker.io
+  registry: docker-registry.default.svc:5000
 environments:
 - ingress:
     domain: apps.serv.run
@@ -25,16 +25,16 @@ environments:
       production: false
   key: dev
 - ingress:
-    domain: ""
+    domain: apps.serv.run
     externalDNS: false
-    namespaceSubDomain: ""
+    namespaceSubDomain: -stage
     tls:
       email: ""
       enabled: false
       production: false
   key: staging
 - ingress:
-    domain: ""
+    domain: apps.serv.run
     externalDNS: false
     namespaceSubDomain: ""
     tls:
