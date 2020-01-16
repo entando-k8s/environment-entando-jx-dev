@@ -7,7 +7,7 @@ cluster:
   devEnvApprovers:
   - ampie
   - Kerruba
-  environmentGitOwner: entando-jx
+  environmentGitOwner: entando-k8s-infrastructure
   gitKind: github
   gitName: github
   gitServer: https://github.com
