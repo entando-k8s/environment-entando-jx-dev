@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: entando-k8s-infrastructure
+    provider: github
+    repository: entando-k8s-custom-model
+  name: entando-k8s-infrastructure-entando-k8s-custom-model
+spec:
+  description: Imported application for entando-k8s-infrastructure/entando-k8s-custom-model
+  httpCloneURL: https://github.com/entando-k8s-infrastructure/entando-k8s-custom-model.git
+  org: entando-k8s-infrastructure
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: entando-k8s-custom-model
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/entando-k8s-infrastructure/entando-k8s-custom-model.git
