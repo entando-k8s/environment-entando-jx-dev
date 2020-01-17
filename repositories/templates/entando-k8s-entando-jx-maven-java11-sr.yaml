@@ -8,14 +8,14 @@ metadata:
     jenkins.io/chart-release: repos
     jenkins.io/namespace: jx
     jenkins.io/version: "3"
-    owner: entando-k8s-infrastructure
+    owner: entando-k8s
     provider: github
     repository: entando-jx-maven-java11
-  name: entando-k8s-infrastructure-entando-jx-maven-java11
+  name: entando-k8s-entando-jx-maven-java11
 spec:
-  description: Imported application for entando-k8s-infrastructure/entando-jx-maven-java11
-  httpCloneURL: https://github.com/entando-k8s-infrastructure/entando-jx-maven-java11.git
-  org: entando-k8s-infrastructure
+  description: Imported application for entando-k8s/entando-jx-maven-java11
+  httpCloneURL: https://github.com/entando-k8s/entando-jx-maven-java11.git
+  org: entando-k8s
   provider: https://github.com
   providerKind: github
   providerName: github
@@ -23,4 +23,4 @@ spec:
   scheduler:
     kind: ""
     name: ""
-  url: https://github.com/entando-k8s-infrastructure/entando-jx-maven-java11.git
+  url: https://github.com/entando-k8s/entando-jx-maven-java11.git
