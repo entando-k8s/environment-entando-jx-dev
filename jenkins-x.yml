@@ -290,9 +290,9 @@ pipelineConfig:
               jx edit storage -c tests --git-branch=tests --git-url=https://github.com/entando-k8s/devops-results.git;
               jx edit storage -c coverage --git-branch=coverage --git-url=https://github.com/entando-k8s/devops-results.git;
               jx edit storage -c reports --git-branch=gh-pages --git-url=https://github.com/entando-k8s/devops-results.git;
-              kubectl delete route -l generator=exposecontroller;
-              kubectl delete secret jenkins-release-gpg;
-              kubectl get secret jenkins-release-gpg-bup -o yaml|sed 's/gpg-bup/gpg/'|kubectl create -f -;
-              kubectl delete secret jenkins-docker-cfg;
-              kubectl get secret jenkins-docker-cfg-bup -o yaml|sed 's/cfg-bup/cfg/'|kubectl create -f -;
+              kubectl delete route -l generator=exposecontroller; kubectl delete secret
+              jenkins-release-gpg; kubectl get secret jenkins-release-gpg-bup -o yaml|sed
+              's/gpg-bup/gpg/'|kubectl create -f -; kubectl delete secret jenkins-docker-cfg;
+              kubectl get secret jenkins-docker-cfg-bup -o yaml|sed 's/cfg-bup/cfg/'|kubectl
+              create -f -;
             name: set-github-storage
