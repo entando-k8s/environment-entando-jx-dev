@@ -1,0 +1,7 @@
+dependencies:
+- host: github.com
+  owner: entando-k8s-infrastructure
+  repo: entando-jx-maven-java11
+  url: https://github.com/entando-k8s-infrastructure/entando-jx-maven-java11.git
+  version: ""
+  versionURL: ""
