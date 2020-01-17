@@ -2,10 +2,10 @@ adminUser:
   password: local:entando-jx/adminUser:password
   username: admin
 docker:
-  email: a.barnard@entando.com
+  email: entando.build.user@gmail.com
   password: local:entando-jx/docker:password
-  url: docker-registry.default.svc:5000
-  username: admin-entando
+  url: docker.io
+  username: entandobuilduser
 enableDocker: true
 pipelineUser:
   email: entando.build.user@gmail.com
