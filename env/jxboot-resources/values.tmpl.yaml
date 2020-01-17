@@ -64,7 +64,7 @@ gitops:
 {{- if eq .Requirements.cluster.provider "gke" }}
     dockerRegistryOrg: "{{ .Requirements.cluster.project }}"
 {{- else }}
-    dockerRegistryOrg: ""
+    dockerRegistryOrg: "entando"
 {{- end }}
 
 

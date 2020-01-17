@@ -1,21 +1,25 @@
 autoUpdate:
   enabled: false
   schedule: ""
-bootConfigURL: https://github.com/jenkins-x/jenkins-x-boot-config
+bootConfigURL: https://github.com/entando-k8s-infrastructure/jenkins-x-boot-config
 cluster:
+  environmentGitPublic: false
   clusterName: entando-jx
   devEnvApprovers:
   - ampie
   - Kerruba
+  - joewhite101
   environmentGitOwner: entando-k8s-infrastructure
   gitKind: github
   gitName: github
+  gitPublic: true
   gitServer: https://github.com
   namespace: jx
   provider: openshift
   registry: docker.io
 environments:
 - ingress:
+    exposer: Route
     domain: apps.serv.run
     externalDNS: false
     namespaceSubDomain: -jx.
@@ -24,7 +28,12 @@ environments:
       enabled: false
       production: false
   key: dev
+  gitKind: github
+  gitServer: https://github.com
+  owner: entando-k8s-infrastructure
+  repository: environment-entando-jx-dev
 - ingress:
+    exposer: Route
     domain: apps.serv.run
     externalDNS: false
     namespaceSubDomain: -stage
@@ -33,7 +42,12 @@ environments:
       enabled: false
       production: false
   key: staging
+  gitKind: github
+  gitServer: https://github.com
+  owner: entando-k8s-infrastructure
+  repository: environment-entando-jx-staging
 - ingress:
+    exposer: Route
     domain: apps.serv.run
     externalDNS: false
     namespaceSubDomain: ""
@@ -42,8 +56,15 @@ environments:
       enabled: false
       production: false
   key: production
+  gitKind: github
+  gitServer: https://github.com
+  owner: entando-k8s-infrastructure
+  repository: environment-entando-jx-production
 gitops: true
+kaniko: false
+terraform: false
 ingress:
+  exposer: Route
   domain: apps.serv.run
   externalDNS: false
   namespaceSubDomain: -jx.
