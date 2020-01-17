@@ -13,7 +13,7 @@ cluster:
   gitServer: https://github.com
   namespace: jx
   provider: openshift
-  registry: docker.io
+  registry: https://index.docker.io/v1
 environments:
 - ingress:
     domain: apps.serv.run
