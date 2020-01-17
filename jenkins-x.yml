@@ -289,5 +289,5 @@ pipelineConfig:
               jx edit storage -c logs --git-branch=logs --git-url=https://github.com/entando-k8s-infrastructure/devops-results.git;
               jx edit storage -c tests --git-branch=tests --git-url=https://github.com/entando-k8s-infrastructure/devops-results.git;
               jx edit storage -c coverage --git-branch=coverage --git-url=https://github.com/entando-k8s-infrastructure/devops-results.git;
-              jx edit storage -c reports --git-branch=reports --git-url=https://github.com/entando-k8s-infrastructure/devops-results.git;
+              jx edit storage -c reports --git-branch=gh-pages --git-url=https://github.com/entando-k8s-infrastructure/devops-results.git;
             name: set-github-storage

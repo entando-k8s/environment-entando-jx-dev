@@ -21,7 +21,6 @@ environments:
   gitServer: https://github.com
   ingress:
     domain: apps.serv.run
-    exposer: Route
     externalDNS: false
     namespaceSubDomain: -jx.
     tls:
@@ -35,7 +34,6 @@ environments:
   gitServer: https://github.com
   ingress:
     domain: apps.serv.run
-    exposer: Route
     externalDNS: false
     namespaceSubDomain: -stage
     tls:
@@ -49,7 +47,6 @@ environments:
   gitServer: https://github.com
   ingress:
     domain: apps.serv.run
-    exposer: Route
     externalDNS: false
     namespaceSubDomain: ""
     tls:
@@ -62,7 +59,6 @@ environments:
 gitops: true
 ingress:
   domain: apps.serv.run
-  exposer: Route
   externalDNS: false
   namespaceSubDomain: -jx.
   tls:
