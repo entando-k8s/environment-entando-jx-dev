@@ -1,14 +1,14 @@
 autoUpdate:
   enabled: false
   schedule: ""
-bootConfigURL: https://github.com/entando-k8s-infrastructure/jenkins-x-boot-config
+bootConfigURL: https://github.com/entando-k8s/jenkins-x-boot-config
 cluster:
   clusterName: entando-jx
   devEnvApprovers:
   - ampie
   - Kerruba
   - joewhite101
-  environmentGitOwner: entando-k8s-infrastructure
+  environmentGitOwner: entando-k8s
   gitKind: github
   gitName: github
   gitPublic: true
@@ -28,7 +28,7 @@ environments:
       enabled: false
       production: false
   key: dev
-  owner: entando-k8s-infrastructure
+  owner: entando-k8s
   repository: environment-entando-jx-dev
 - gitKind: github
   gitServer: https://github.com
@@ -41,7 +41,7 @@ environments:
       enabled: false
       production: false
   key: staging
-  owner: entando-k8s-infrastructure
+  owner: entando-k8s
   repository: environment-entando-jx-staging
 - gitKind: github
   gitServer: https://github.com
@@ -54,7 +54,7 @@ environments:
       enabled: false
       production: false
   key: production
-  owner: entando-k8s-infrastructure
+  owner: entando-k8s
   repository: environment-entando-jx-production
 gitops: true
 ingress:
