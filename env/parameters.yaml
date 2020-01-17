@@ -4,7 +4,7 @@ adminUser:
 docker:
   email: entando.build.user@gmail.com
   password: local:entando-jx/docker:password
-  url: docker.io
+  url: https://index.docker.io/v1/
   username: entandobuilduser
 enableDocker: true
 pipelineUser:
