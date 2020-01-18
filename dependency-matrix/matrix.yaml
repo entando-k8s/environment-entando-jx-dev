@@ -29,3 +29,9 @@ dependencies:
   url: https://github.com/entando-k8s/entando-k8s-keycloak-controller.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: entando-k8s
+  repo: entando-k8s-plugin-controller
+  url: https://github.com/entando-k8s/entando-k8s-plugin-controller.git
+  version: ""
+  versionURL: ""
