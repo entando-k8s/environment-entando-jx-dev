@@ -9,3 +9,4 @@ Dependency | Sources | Version | Mismatched versions
 [entando-k8s/entando-k8s-keycloak-controller](https://github.com/entando-k8s/entando-k8s-keycloak-controller.git) |  | []() | 
 [entando-k8s/entando-k8s-plugin-controller](https://github.com/entando-k8s/entando-k8s-plugin-controller.git) |  | []() | 
 [entando-k8s/entando-k8s-app-plugin-link-controller](https://github.com/entando-k8s/entando-k8s-app-plugin-link-controller.git) |  | []() | 
+[entando-k8s/entando-k8s-composite-app-controller](https://github.com/entando-k8s/entando-k8s-composite-app-controller.git) |  | []() | 
