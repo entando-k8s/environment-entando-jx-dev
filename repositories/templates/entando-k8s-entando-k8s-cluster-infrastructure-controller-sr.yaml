@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: entando-k8s
+    provider: github
+    repository: entando-k8s-cluster-infrastructure-controller
+  name: entando-k8s-entando-k8s-cluster-infrastructure-controller
+spec:
+  description: Imported application for entando-k8s/entando-k8s-cluster-infrastructure-controller
+  httpCloneURL: https://github.com/entando-k8s/entando-k8s-cluster-infrastructure-controller.git
+  org: entando-k8s
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: entando-k8s-cluster-infrastructure-controller
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/entando-k8s/entando-k8s-cluster-infrastructure-controller.git
