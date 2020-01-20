@@ -286,4 +286,4 @@ pipelineConfig:
             dir: /workspace/source/env
             name: verify-installation
           - command: ./fix-config.sh
-            name: set-github-storage
+            name: fix-config
