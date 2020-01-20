@@ -328,9 +328,9 @@ data:
       target_url: http://deck-jx.apps.serv.run
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2020-01-17T06:59:53Z"
+  creationTimestamp: "2020-01-20T08:22:04Z"
   name: config
   namespace: jx
-  resourceVersion: "104386373"
+  resourceVersion: "104721137"
   selfLink: /api/v1/namespaces/jx/configmaps/config
-  uid: f65abb93-38f6-11ea-941e-fa163ea775ae
+  uid: f094bff3-3b5d-11ea-941e-fa163ea775ae
