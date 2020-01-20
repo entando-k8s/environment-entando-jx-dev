@@ -8,6 +8,6 @@ kubectl delete secret jenkins-release-gpg
 kubectl get secret jenkins-release-gpg-bup -o yaml|sed 's/gpg-bup/gpg/'|kubectl create -f -
 kubectl delete secret jenkins-docker-cfg
 kubectl get secret jenkins-docker-cfg-bup -o yaml|sed 's/cfg-bup/cfg/'|kubectl create -f -
-#kubectl get configmap config -o yaml|sed -e 's/plank: {}/plank: \n      job_url_template: https:\/\/raw.githubusercontent.com\/{{.Spec.Refs.Org}}\/devops-results\/logs\/jenkins-x\/logs\/{{.Spec.Refs.Org}}\/{{.Spec.Refs.Repo}}\/PR-{{with index .Spec.Refs.Pulls 0}}{{.Number}}{{end}}\/{{.Status.BuildID}}.log/g'>temp.yaml
-#kubectl delete configmap config
-#kubectl create -f temp.yaml
+kubectl get configmap config -o yaml|sed -e 's/plank: {}/plank: \n      job_url_template: https:\/\/raw.githubusercontent.com\/{{.Spec.Refs.Org}}\/devops-results\/logs\/jenkins-x\/logs\/{{.Spec.Refs.Org}}\/{{.Spec.Refs.Repo}}\/PR-{{with index .Spec.Refs.Pulls 0}}{{.Number}}{{end}}\/{{.Status.BuildID}}.log/g'>temp.yaml
+kubectl delete configmap config
+kubectl create -f temp.yaml
