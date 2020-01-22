@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: entando-k8s
+    provider: github
+    repository: entando-component-manager
+  name: entando-k8s-entando-component-manager
+spec:
+  description: Imported application for entando-k8s/entando-component-manager
+  httpCloneURL: https://github.com/entando-k8s/entando-component-manager.git
+  org: entando-k8s
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: entando-component-manager
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/entando-k8s/entando-component-manager.git

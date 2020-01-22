@@ -11,3 +11,4 @@ Dependency | Sources | Version | Mismatched versions
 [entando-k8s/entando-k8s-app-plugin-link-controller](https://github.com/entando-k8s/entando-k8s-app-plugin-link-controller.git) |  | []() | 
 [entando-k8s/entando-k8s-composite-app-controller](https://github.com/entando-k8s/entando-k8s-composite-app-controller.git) |  | []() | 
 [entando-k8s/entando-k8s-controller-coordinator](https://github.com/entando-k8s/entando-k8s-controller-coordinator.git) |  | []() | 
+[entando-k8s/entando-component-manager](https://github.com/entando-k8s/entando-component-manager.git) |  | []() | 
