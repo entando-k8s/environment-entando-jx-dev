@@ -59,3 +59,9 @@ dependencies:
   url: https://github.com/entando-k8s/entando-component-manager.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: entando-k8s
+  repo: web-commons
+  url: https://github.com/entando-k8s/web-commons.git
+  version: ""
+  versionURL: ""
