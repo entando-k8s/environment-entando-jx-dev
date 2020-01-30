@@ -13,3 +13,4 @@ Dependency | Sources | Version | Mismatched versions
 [entando-k8s/entando-k8s-controller-coordinator](https://github.com/entando-k8s/entando-k8s-controller-coordinator.git) |  | []() | 
 [entando-k8s/entando-component-manager](https://github.com/entando-k8s/entando-component-manager.git) |  | []() | 
 [entando-k8s/web-commons](https://github.com/entando-k8s/web-commons.git) |  | []() | 
+[entando-k8s/entando-de-app](https://github.com/entando-k8s/entando-de-app.git) |  | []() | 
