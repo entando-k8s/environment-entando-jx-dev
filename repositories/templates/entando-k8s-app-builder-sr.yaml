@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: entando-k8s
+    provider: github
+    repository: app-builder
+  name: entando-k8s-app-builder
+spec:
+  description: Imported application for entando-k8s/app-builder
+  httpCloneURL: https://github.com/entando-k8s/app-builder.git
+  org: entando-k8s
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: app-builder
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/entando-k8s/app-builder.git
