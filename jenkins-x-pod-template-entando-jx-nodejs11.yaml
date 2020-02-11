@@ -123,5 +123,5 @@ metadata:
     jenkins.io/chart: env
   labels:
     jenkins.io/kind: podTemplate
-  name: jenkins-x-pod-template-entando-jx-nodejs
+  name: jenkins-x-pod-template-entando-jx-nodejs11
   namespace: jx
