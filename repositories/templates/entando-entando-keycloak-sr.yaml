@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: entando
+    provider: github
+    repository: entando-keycloak
+  name: entando-entando-keycloak
+spec:
+  description: Imported application for entando/entando-keycloak
+  httpCloneURL: https://github.com/entando/entando-keycloak.git
+  org: entando
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: entando-keycloak
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/entando/entando-keycloak.git
