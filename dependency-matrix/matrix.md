@@ -19,3 +19,4 @@ Dependency | Sources | Version | Mismatched versions
 [entando-k8s/entando-k8s-dbjob](https://github.com/entando-k8s/entando-k8s-dbjob.git) |  | []() | 
 [entando/entando-keycloak](https://github.com/entando/entando-keycloak.git) |  | []() | 
 [entando-k8s/entando-jx-nodejs12](https://github.com/entando-k8s/entando-jx-nodejs12.git) |  | []() | 
+[entando-k8s/entando-k8s-service](https://github.com/entando-k8s/entando-k8s-service.git) |  | []() | 

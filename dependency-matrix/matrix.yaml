@@ -101,3 +101,9 @@ dependencies:
   url: https://github.com/entando-k8s/entando-jx-nodejs12.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: entando-k8s
+  repo: entando-k8s-service
+  url: https://github.com/entando-k8s/entando-k8s-service.git
+  version: ""
+  versionURL: ""
