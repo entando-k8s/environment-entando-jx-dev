@@ -10,7 +10,7 @@ metadata:
 spec:
   description: Imported application for entando/app-builder
   httpCloneURL: https://github.com/entando/app-builder.git
-  org: entando-k8s
+  org: entando
   provider: https://github.com
   providerKind: github
   providerName: github
