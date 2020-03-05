@@ -14,7 +14,7 @@ Dependency | Sources | Version | Mismatched versions
 [entando-k8s/entando-component-manager](https://github.com/entando-k8s/entando-component-manager.git) |  | []() | 
 [entando-k8s/web-commons](https://github.com/entando-k8s/web-commons.git) |  | []() | 
 [entando-k8s/entando-de-app](https://github.com/entando-k8s/entando-de-app.git) |  | []() | 
-[entando-k8s/app-builder](https://github.com/entando-k8s/app-builder.git) |  | []() | 
+[entando/app-builder](https://github.com/entando/app-builder.git) |  | []() | 
 [entando-k8s/entando-jx-nodejs11](https://github.com/entando-k8s/entando-jx-nodejs11.git) |  | []() | 
 [entando-k8s/entando-k8s-dbjob](https://github.com/entando-k8s/entando-k8s-dbjob.git) |  | []() | 
 [entando/entando-keycloak](https://github.com/entando/entando-keycloak.git) |  | []() | 
