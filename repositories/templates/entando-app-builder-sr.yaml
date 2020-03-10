@@ -1,0 +1,26 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  annotations:
+    jenkins.io/last-build-number-for-master: "4"
+  creationTimestamp: null
+  labels:
+    jenkins.io/chart-release: repos
+    jenkins.io/namespace: jx
+    jenkins.io/version: "25"
+    owner: entando
+    provider: github
+    repository: app-builder
+  name: entando-app-builder
+spec:
+  description: Imported application for entando/app-builder
+  httpCloneURL: https://github.com/entando/app-builder.git
+  org: entando
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: app-builder
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/entando/app-builder.git
