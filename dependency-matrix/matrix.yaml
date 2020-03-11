@@ -113,3 +113,9 @@ dependencies:
   url: https://github.com/entando-jx/spring-boot-http-gradle.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: entando-jx
+  repo: test
+  url: https://github.com/entando-jx/test.git
+  version: ""
+  versionURL: ""
