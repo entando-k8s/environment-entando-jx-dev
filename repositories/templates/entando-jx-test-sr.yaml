@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: entando-jx
+    provider: github
+    repository: test
+  name: entando-jx-test
+spec:
+  description: Imported application for entando-jx/test
+  httpCloneURL: https://github.com/entando-jx/test.git
+  org: entando-jx
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: test
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/entando-jx/test.git
