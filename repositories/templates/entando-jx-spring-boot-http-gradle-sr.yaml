@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: entando-jx
+    provider: github
+    repository: spring-boot-http-gradle
+  name: entando-jx-spring-boot-http-gradle
+spec:
+  description: Imported application for entando-jx/spring-boot-http-gradle
+  httpCloneURL: https://github.com/entando-jx/spring-boot-http-gradle.git
+  org: entando-jx
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: spring-boot-http-gradle
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/entando-jx/spring-boot-http-gradle.git

@@ -20,3 +20,4 @@ Dependency | Sources | Version | Mismatched versions
 [entando/entando-keycloak](https://github.com/entando/entando-keycloak.git) |  | []() | 
 [entando-k8s/entando-jx-nodejs12](https://github.com/entando-k8s/entando-jx-nodejs12.git) |  | []() | 
 [entando-k8s/entando-k8s-service](https://github.com/entando-k8s/entando-k8s-service.git) |  | []() | 
+[entando-jx/spring-boot-http-gradle](https://github.com/entando-jx/spring-boot-http-gradle.git) |  | []() | 
