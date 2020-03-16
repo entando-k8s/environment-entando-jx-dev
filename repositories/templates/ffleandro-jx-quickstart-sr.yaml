@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: ffleandro
+    provider: github
+    repository: jx-quickstart
+  name: ffleandro-jx-quickstart
+spec:
+  description: Imported application for ffleandro/jx-quickstart
+  httpCloneURL: https://github.com/ffleandro/jx-quickstart.git
+  org: ffleandro
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: jx-quickstart
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/ffleandro/jx-quickstart.git

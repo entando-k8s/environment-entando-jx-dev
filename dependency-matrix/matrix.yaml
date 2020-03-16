@@ -119,3 +119,9 @@ dependencies:
   url: https://github.com/entando-jx/test.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: ffleandro
+  repo: jx-quickstart
+  url: https://github.com/ffleandro/jx-quickstart.git
+  version: ""
+  versionURL: ""
