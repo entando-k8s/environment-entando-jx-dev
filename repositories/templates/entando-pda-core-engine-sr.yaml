@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: entando
+    provider: github
+    repository: pda-core-engine
+  name: entando-pda-core-engine
+spec:
+  description: Imported application for entando/pda-core-engine
+  httpCloneURL: https://github.com/entando/pda-core-engine.git
+  org: entando
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: pda-core-engine
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/entando/pda-core-engine.git

@@ -23,3 +23,4 @@ Dependency | Sources | Version | Mismatched versions
 [entando-jx/spring-boot-http-gradle](https://github.com/entando-jx/spring-boot-http-gradle.git) |  | []() | 
 [entando-jx/test](https://github.com/entando-jx/test.git) |  | []() | 
 [ffleandro/jx-quickstart](https://github.com/ffleandro/jx-quickstart.git) |  | []() | 
+[entando/pda-core-engine](https://github.com/entando/pda-core-engine.git) |  | []() | 

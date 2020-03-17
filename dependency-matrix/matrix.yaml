@@ -125,3 +125,9 @@ dependencies:
   url: https://github.com/ffleandro/jx-quickstart.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: entando
+  repo: pda-core-engine
+  url: https://github.com/entando/pda-core-engine.git
+  version: ""
+  versionURL: ""
