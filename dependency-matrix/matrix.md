@@ -24,3 +24,4 @@ Dependency | Sources | Version | Mismatched versions
 [entando-jx/test](https://github.com/entando-jx/test.git) |  | []() | 
 [ffleandro/jx-quickstart](https://github.com/ffleandro/jx-quickstart.git) |  | []() | 
 [entando/pda-core-engine](https://github.com/entando/pda-core-engine.git) |  | []() | 
+[entando/entando-pda-redhatpam-engine](https://github.com/entando/entando-pda-redhatpam-engine.git) |  | []() | 

@@ -131,3 +131,9 @@ dependencies:
   url: https://github.com/entando/pda-core-engine.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: entando
+  repo: entando-pda-redhatpam-engine
+  url: https://github.com/entando/entando-pda-redhatpam-engine.git
+  version: ""
+  versionURL: ""
