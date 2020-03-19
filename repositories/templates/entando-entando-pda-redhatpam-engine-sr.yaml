@@ -5,7 +5,7 @@ metadata:
   labels:
     jenkins.io/chart-release: repos
     jenkins.io/namespace: jx
-    jenkins.io/version: "31"
+    jenkins.io/version: "32"
     owner: entando
     provider: github
     repository: entando-pda-redhatpam-engine
