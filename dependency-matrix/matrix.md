@@ -26,3 +26,4 @@ Dependency | Sources | Version | Mismatched versions
 [entando/pda-core-engine](https://github.com/entando/pda-core-engine.git) |  | []() | 
 [entando/entando-pda-redhatpam-engine](https://github.com/entando/entando-pda-redhatpam-engine.git) |  | []() | 
 [entando/entando-process-driven-apps](https://github.com/entando/entando-process-driven-apps.git) |  | []() | 
+[entando/pda-redhatpam-engine](https://github.com/entando/pda-redhatpam-engine.git) |  | []() | 
