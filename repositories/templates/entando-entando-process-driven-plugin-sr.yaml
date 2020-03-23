@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: entando
+    provider: github
+    repository: entando-process-driven-plugin
+  name: entando-entando-process-driven-plugin
+spec:
+  description: Imported application for entando/entando-process-driven-plugin
+  httpCloneURL: https://github.com/entando/entando-process-driven-plugin.git
+  org: entando
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: entando-process-driven-plugin
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/entando/entando-process-driven-plugin.git

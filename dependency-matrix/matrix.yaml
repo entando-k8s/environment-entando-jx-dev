@@ -149,3 +149,9 @@ dependencies:
   url: https://github.com/entando/pda-redhatpam-engine.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: entando
+  repo: entando-process-driven-plugin
+  url: https://github.com/entando/entando-process-driven-plugin.git
+  version: ""
+  versionURL: ""
