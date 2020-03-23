@@ -1,11 +1,13 @@
 apiVersion: jenkins.io/v1
 kind: SourceRepository
 metadata:
+  annotations:
+    jenkins.io/last-build-number-for-master: "1"
   creationTimestamp: null
   labels:
     jenkins.io/chart-release: repos
     jenkins.io/namespace: jx
-    jenkins.io/version: "32"
+    jenkins.io/version: "38"
     owner: entando
     provider: github
     repository: entando-pda-redhatpam-engine
