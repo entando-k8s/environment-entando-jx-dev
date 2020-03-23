@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: entando
+    provider: github
+    repository: pda-redhatpam-engine
+  name: entando-pda-redhatpam-engine
+spec:
+  description: Imported application for entando/pda-redhatpam-engine
+  httpCloneURL: https://github.com/entando/pda-redhatpam-engine.git
+  org: entando
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: pda-redhatpam-engine
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/entando/pda-redhatpam-engine.git
