@@ -7,7 +7,7 @@ metadata:
   labels:
     jenkins.io/chart-release: repos
     jenkins.io/namespace: jx
-    jenkins.io/version: "35"
+    jenkins.io/version: "37"
     owner: entando
     provider: github
     repository: entando-process-driven-apps
