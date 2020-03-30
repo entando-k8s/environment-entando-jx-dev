@@ -161,3 +161,9 @@ dependencies:
   url: https://github.com/entando/entando-maven-root.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: entando
+  repo: entando-core-parent
+  url: https://github.com/entando/entando-core-parent.git
+  version: ""
+  versionURL: ""
