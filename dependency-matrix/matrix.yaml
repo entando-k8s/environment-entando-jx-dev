@@ -155,3 +155,9 @@ dependencies:
   url: https://github.com/entando/entando-process-driven-plugin.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: entando
+  repo: entando-maven-root
+  url: https://github.com/entando/entando-maven-root.git
+  version: ""
+  versionURL: ""
