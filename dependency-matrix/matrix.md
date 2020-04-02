@@ -30,3 +30,4 @@ Dependency | Sources | Version | Mismatched versions
 [entando/entando-process-driven-plugin](https://github.com/entando/entando-process-driven-plugin.git) |  | []() | 
 [entando/entando-maven-root](https://github.com/entando/entando-maven-root.git) |  | []() | 
 [entando/entando-core-parent](https://github.com/entando/entando-core-parent.git) |  | []() | 
+[entando/entando-engine](https://github.com/entando/entando-engine.git) |  | []() | 

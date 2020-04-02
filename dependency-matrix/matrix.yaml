@@ -167,3 +167,9 @@ dependencies:
   url: https://github.com/entando/entando-core-parent.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: entando
+  repo: entando-engine
+  url: https://github.com/entando/entando-engine.git
+  version: ""
+  versionURL: ""

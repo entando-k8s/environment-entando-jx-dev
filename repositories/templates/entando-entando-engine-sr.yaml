@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: entando
+    provider: github
+    repository: entando-engine
+  name: entando-entando-engine
+spec:
+  description: Imported application for entando/entando-engine
+  httpCloneURL: https://github.com/entando/entando-engine.git
+  org: entando
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: entando-engine
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/entando/entando-engine.git
