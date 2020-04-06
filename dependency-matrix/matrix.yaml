@@ -179,3 +179,9 @@ dependencies:
   url: https://github.com/entando-k8s/entando-quarkus-parent.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: entando-k8s
+  repo: entando-spring-boot-parent
+  url: https://github.com/entando-k8s/entando-spring-boot-parent.git
+  version: ""
+  versionURL: ""

@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: entando-k8s
+    provider: github
+    repository: entando-spring-boot-parent
+  name: entando-k8s-entando-spring-boot-parent
+spec:
+  description: Imported application for entando-k8s/entando-spring-boot-parent
+  httpCloneURL: https://github.com/entando-k8s/entando-spring-boot-parent.git
+  org: entando-k8s
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: entando-spring-boot-parent
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/entando-k8s/entando-spring-boot-parent.git
