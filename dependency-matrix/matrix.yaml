@@ -173,3 +173,9 @@ dependencies:
   url: https://github.com/entando/entando-engine.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: entando-k8s
+  repo: entando-quarkus-parent
+  url: https://github.com/entando-k8s/entando-quarkus-parent.git
+  version: ""
+  versionURL: ""

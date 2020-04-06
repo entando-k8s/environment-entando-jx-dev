@@ -31,3 +31,4 @@ Dependency | Sources | Version | Mismatched versions
 [entando/entando-maven-root](https://github.com/entando/entando-maven-root.git) |  | []() | 
 [entando/entando-core-parent](https://github.com/entando/entando-core-parent.git) |  | []() | 
 [entando/entando-engine](https://github.com/entando/entando-engine.git) |  | []() | 
+[entando-k8s/entando-quarkus-parent](https://github.com/entando-k8s/entando-quarkus-parent.git) |  | []() | 
