@@ -185,3 +185,9 @@ dependencies:
   url: https://github.com/entando-k8s/entando-spring-boot-parent.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: entando
+  repo: entando-cms
+  url: https://github.com/entando/entando-cms.git
+  version: ""
+  versionURL: ""
