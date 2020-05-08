@@ -17,5 +17,5 @@ spec:
   repo: entando-cms
   scheduler:
     kind: ""
-    name: entando-npm-scheduler
+    name: entando-npm-scheduler-v1
   url: https://github.com/entando/entando-cms.git
