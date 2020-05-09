@@ -17,5 +17,5 @@ spec:
   repo: test
   scheduler:
     kind: ""
-    name: ampie-scheduler
+    name: anoue-scheduler
   url: https://github.com/entando-k8s/test.git
