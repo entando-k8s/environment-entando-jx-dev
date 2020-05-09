@@ -191,3 +191,9 @@ dependencies:
   url: https://github.com/entando/entando-cms.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: entando-k8s
+  repo: test
+  url: https://github.com/entando-k8s/test.git
+  version: ""
+  versionURL: ""

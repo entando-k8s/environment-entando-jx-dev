@@ -34,3 +34,4 @@ Dependency | Sources | Version | Mismatched versions
 [entando-k8s/entando-quarkus-parent](https://github.com/entando-k8s/entando-quarkus-parent.git) |  | []() | 
 [entando-k8s/entando-spring-boot-parent](https://github.com/entando-k8s/entando-spring-boot-parent.git) |  | []() | 
 [entando/entando-cms](https://github.com/entando/entando-cms.git) |  | []() | 
+[entando-k8s/test](https://github.com/entando-k8s/test.git) |  | []() | 
