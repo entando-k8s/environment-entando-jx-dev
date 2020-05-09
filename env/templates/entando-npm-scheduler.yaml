@@ -58,7 +58,7 @@ spec:
         maxConcurrency: 0
         name: release
         report: false
-        runIfChanged: '(?m)^([^p]).*(\s+|$)'
+        runIfChanged: '(?m)^[^p].*$'
         skipBranches: {}
   presubmits:
     entries:
