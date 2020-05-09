@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: entando-k8s
+    provider: github
+    repository: test
+  name: entando-k8s-test
+spec:
+  description: Imported application for entando-k8s/test
+  httpCloneURL: https://github.com/entando-k8s/test.git
+  org: entando-k8s
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: test
+  scheduler:
+    kind: ""
+    name: ampie-scheduler
+  url: https://github.com/entando-k8s/test.git
