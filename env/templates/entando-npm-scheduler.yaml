@@ -58,7 +58,7 @@ spec:
         maxConcurrency: 0
         name: release
         report: false
-        runIfChanged: '(?m)^[^p].*$'
+        runIfChanged: '/(?m)^(([^p].*$)|^(p[^a].*$)|^(pa[^c].*$)|^(pac[^k].*$))/gm'
         skipBranches: {}
   presubmits:
     entries:
@@ -109,7 +109,7 @@ spec:
             reviewApprovedRequired: false
         report: true
         rerunCommand: /test this
-        runIfChanged: ''
+        runIfChanged: '/(?m)^(([^p].*$)|^(p[^a].*$)|^(pa[^c].*$)|^(pac[^k].*$))/gm'
         skipBranches: {}
         trigger: '(?m)^/test( all| this),?(\s+|$)'
   schedulerAgent:
