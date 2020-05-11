@@ -63,7 +63,7 @@ spec:
   presubmits:
     entries:
       - agent: tekton
-        alwaysRun: false
+        alwaysRun: true
         branches: {}
         cluster: ''
         context: pr-build
@@ -109,7 +109,7 @@ spec:
             reviewApprovedRequired: false
         report: true
         rerunCommand: /test this
-        runIfChanged: '/(?m)^(([^p].*$)|^(p[^a].*$)|^(pa[^c].*$)|^(pac[^k].*$))/gm'
+        runIfChanged: ''
         skipBranches: {}
         trigger: '(?m)^/test( all| this),?(\s+|$)'
   schedulerAgent:
