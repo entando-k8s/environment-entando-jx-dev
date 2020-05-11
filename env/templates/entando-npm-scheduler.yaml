@@ -58,7 +58,7 @@ spec:
         maxConcurrency: 0
         name: release
         report: false
-        runIfChanged: '/(?m)^(([^p].*$)|^(p[^a].*$)|^(pa[^c].*$)|^(pac[^k].*$))/gm'
+        runIfChanged: '(?m)^[^p].*$'
         skipBranches: {}
   presubmits:
     entries:
