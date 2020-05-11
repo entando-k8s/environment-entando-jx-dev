@@ -63,7 +63,7 @@ spec:
   presubmits:
     entries:
       - agent: tekton
-        alwaysRun: true
+        alwaysRun: false
         branches: {}
         cluster: ''
         context: pr-build
