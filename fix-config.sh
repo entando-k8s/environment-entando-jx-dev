@@ -13,3 +13,4 @@ kubectl delete configmap config
 kubectl create -f temp.yaml
 kubectl apply -f jenkins-x-pod-template-entando-jx-maven-java11.yaml
 kubectl apply -f jenkins-x-pod-template-entando-jx-nodejs11.yaml
+jx edit buildpack -u https://github.com/entando-k8s/jenkins-x-kubernetes.git
