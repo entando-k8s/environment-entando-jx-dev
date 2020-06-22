@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: entando
+    provider: github
+    repository: octo-easyclaim-server
+  name: entando-octo-easyclaim-server
+spec:
+  description: Imported application for entando/octo-easyclaim-server
+  httpCloneURL: https://github.com/entando/octo-easyclaim-server.git
+  org: entando
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: octo-easyclaim-server
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/entando/octo-easyclaim-server.git
