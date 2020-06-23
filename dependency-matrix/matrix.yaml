@@ -209,3 +209,9 @@ dependencies:
   url: https://github.com/entando/entando-admin-console.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: entando
+  repo: entando-portal-ui
+  url: https://github.com/entando/entando-portal-ui.git
+  version: ""
+  versionURL: ""
