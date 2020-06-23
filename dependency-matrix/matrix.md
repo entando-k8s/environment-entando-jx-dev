@@ -36,3 +36,4 @@ Dependency | Sources | Version | Mismatched versions
 [entando/entando-cms](https://github.com/entando/entando-cms.git) |  | []() | 
 [entando-k8s/test](https://github.com/entando-k8s/test.git) |  | []() | 
 [entando/octo-easyclaim-server](https://github.com/entando/octo-easyclaim-server.git) |  | []() | 
+[entando/entando-admin-console](https://github.com/entando/entando-admin-console.git) |  | []() | 

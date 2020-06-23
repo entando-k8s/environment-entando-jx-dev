@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: entando
+    provider: github
+    repository: entando-admin-console
+  name: entando-entando-admin-console
+spec:
+  description: Imported application for entando/entando-admin-console
+  httpCloneURL: https://github.com/entando/entando-admin-console.git
+  org: entando
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: entando-admin-console
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/entando/entando-admin-console.git
