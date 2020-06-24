@@ -215,3 +215,9 @@ dependencies:
   url: https://github.com/entando/entando-portal-ui.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: entando
+  repo: octo-easyclaim-mock
+  url: https://github.com/entando/octo-easyclaim-mock.git
+  version: ""
+  versionURL: ""

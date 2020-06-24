@@ -38,3 +38,4 @@ Dependency | Sources | Version | Mismatched versions
 [entando/octo-easyclaim-server](https://github.com/entando/octo-easyclaim-server.git) |  | []() | 
 [entando/entando-admin-console](https://github.com/entando/entando-admin-console.git) |  | []() | 
 [entando/entando-portal-ui](https://github.com/entando/entando-portal-ui.git) |  | []() | 
+[entando/octo-easyclaim-mock](https://github.com/entando/octo-easyclaim-mock.git) |  | []() | 
