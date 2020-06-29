@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: entando
+    provider: github
+    repository: entando-plugin-jacms
+  name: entando-entando-plugin-jacms
+spec:
+  description: Imported application for entando/entando-plugin-jacms
+  httpCloneURL: https://github.com/entando/entando-plugin-jacms.git
+  org: entando
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: entando-plugin-jacms
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/entando/entando-plugin-jacms.git
