@@ -221,3 +221,9 @@ dependencies:
   url: https://github.com/entando/octo-easyclaim-mock.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: entando
+  repo: entando-plugin-jacms
+  url: https://github.com/entando/entando-plugin-jacms.git
+  version: ""
+  versionURL: ""

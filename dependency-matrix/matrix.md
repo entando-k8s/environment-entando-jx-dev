@@ -39,3 +39,4 @@ Dependency | Sources | Version | Mismatched versions
 [entando/entando-admin-console](https://github.com/entando/entando-admin-console.git) |  | []() | 
 [entando/entando-portal-ui](https://github.com/entando/entando-portal-ui.git) |  | []() | 
 [entando/octo-easyclaim-mock](https://github.com/entando/octo-easyclaim-mock.git) |  | []() | 
+[entando/entando-plugin-jacms](https://github.com/entando/entando-plugin-jacms.git) |  | []() | 
