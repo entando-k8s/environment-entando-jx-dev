@@ -239,3 +239,9 @@ dependencies:
   url: https://github.com/entando/entando-plugin-jpseo.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: entando
+  repo: entando-plugin-jpmail
+  url: https://github.com/entando/entando-plugin-jpmail.git
+  version: ""
+  versionURL: ""
