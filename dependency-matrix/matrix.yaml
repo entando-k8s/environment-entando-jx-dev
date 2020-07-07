@@ -235,7 +235,7 @@ dependencies:
   versionURL: ""
 - host: github.com
   owner: entando
-  repo: entando-app-view-cms-default
-  url: https://github.com/entando/entando-app-view-cms-default.git
+  repo: entando-plugin-jpseo
+  url: https://github.com/entando/entando-plugin-jpseo.git
   version: ""
   versionURL: ""
