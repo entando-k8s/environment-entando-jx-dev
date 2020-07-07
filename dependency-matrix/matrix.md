@@ -41,3 +41,4 @@ Dependency | Sources | Version | Mismatched versions
 [entando/octo-easyclaim-mock](https://github.com/entando/octo-easyclaim-mock.git) |  | []() | 
 [entando/entando-plugin-jacms](https://github.com/entando/entando-plugin-jacms.git) |  | []() | 
 [entando/entando-plugin-jpversioning](https://github.com/entando/entando-plugin-jpversioning.git) |  | []() | 
+[entando/entando-plugin-jpseo](https://github.com/entando/entando-plugin-jpseo.git) |  | []() | 
