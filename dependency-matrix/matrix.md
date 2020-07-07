@@ -42,3 +42,4 @@ Dependency | Sources | Version | Mismatched versions
 [entando/entando-plugin-jacms](https://github.com/entando/entando-plugin-jacms.git) |  | []() | 
 [entando/entando-plugin-jpversioning](https://github.com/entando/entando-plugin-jpversioning.git) |  | []() | 
 [entando/entando-plugin-jpseo](https://github.com/entando/entando-plugin-jpseo.git) |  | []() | 
+[entando/entando-plugin-jpmail](https://github.com/entando/entando-plugin-jpmail.git) |  | []() | 
