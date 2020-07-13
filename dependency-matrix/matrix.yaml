@@ -251,3 +251,9 @@ dependencies:
   url: https://github.com/entando/entando-plugin-jpcontentscheduler.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: entando
+  repo: entando-component-bundle-k8s-model
+  url: https://github.com/entando/entando-component-bundle-k8s-model.git
+  version: ""
+  versionURL: ""
