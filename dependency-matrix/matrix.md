@@ -45,3 +45,4 @@ Dependency | Sources | Version | Mismatched versions
 [entando/entando-plugin-jpmail](https://github.com/entando/entando-plugin-jpmail.git) |  | []() | 
 [entando/entando-plugin-jpcontentscheduler](https://github.com/entando/entando-plugin-jpcontentscheduler.git) |  | []() | 
 [entando/entando-component-bundle-k8s-model](https://github.com/entando/entando-component-bundle-k8s-model.git) |  | []() | 
+[entando/entando-keycloak-plugin](https://github.com/entando/entando-keycloak-plugin.git) |  | []() | 
