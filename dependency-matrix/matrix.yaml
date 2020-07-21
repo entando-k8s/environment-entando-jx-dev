@@ -257,3 +257,9 @@ dependencies:
   url: https://github.com/entando/entando-component-bundle-k8s-model.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: entando
+  repo: entando-keycloak-plugin
+  url: https://github.com/entando/entando-keycloak-plugin.git
+  version: ""
+  versionURL: ""
