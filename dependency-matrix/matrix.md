@@ -47,3 +47,4 @@ Dependency | Sources | Version | Mismatched versions
 [entando/entando-component-bundle-k8s-model](https://github.com/entando/entando-component-bundle-k8s-model.git) |  | []() | 
 [entando/entando-keycloak-plugin](https://github.com/entando/entando-keycloak-plugin.git) |  | []() | 
 [entando/entando-core-bom](https://github.com/entando/entando-core-bom.git) |  | []() | 
+[entando/entando-spring-boot-parent](https://github.com/entando/entando-spring-boot-parent.git) |  | []() | 
