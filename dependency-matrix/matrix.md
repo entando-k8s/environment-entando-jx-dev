@@ -48,3 +48,4 @@ Dependency | Sources | Version | Mismatched versions
 [entando/entando-keycloak-plugin](https://github.com/entando/entando-keycloak-plugin.git) |  | []() | 
 [entando/entando-core-bom](https://github.com/entando/entando-core-bom.git) |  | []() | 
 [entando/entando-spring-boot-parent](https://github.com/entando/entando-spring-boot-parent.git) |  | []() | 
+[entando/entando-docker-base-images](https://github.com/entando/entando-docker-base-images.git) |  | []() | 

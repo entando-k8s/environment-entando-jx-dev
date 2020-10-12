@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: entando
+    provider: github
+    repository: entando-docker-base-images
+  name: entando-entando-docker-base-images
+spec:
+  description: Imported application for entando/entando-docker-base-images
+  httpCloneURL: https://github.com/entando/entando-docker-base-images.git
+  org: entando
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: entando-docker-base-images
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/entando/entando-docker-base-images.git
