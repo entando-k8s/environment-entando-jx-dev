@@ -49,3 +49,4 @@ Dependency | Sources | Version | Mismatched versions
 [entando/entando-core-bom](https://github.com/entando/entando-core-bom.git) |  | []() | 
 [entando/entando-spring-boot-parent](https://github.com/entando/entando-spring-boot-parent.git) |  | []() | 
 [entando/entando-docker-base-images](https://github.com/entando/entando-docker-base-images.git) |  | []() | 
+[entando-k8s/entando-k8s-database-service-controller](https://github.com/entando-k8s/entando-k8s-database-service-controller.git) |  | []() | 

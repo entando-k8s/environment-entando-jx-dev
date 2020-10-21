@@ -281,3 +281,9 @@ dependencies:
   url: https://github.com/entando/entando-docker-base-images.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: entando-k8s
+  repo: entando-k8s-database-service-controller
+  url: https://github.com/entando-k8s/entando-k8s-database-service-controller.git
+  version: ""
+  versionURL: ""
