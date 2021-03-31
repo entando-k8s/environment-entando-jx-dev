@@ -6,7 +6,6 @@ cluster:
   clusterName: entando-jx
   devEnvApprovers:
   - ampie
-  - Kerruba
   - joewhite101
   environmentGitOwner: entando-k8s
   gitKind: github
