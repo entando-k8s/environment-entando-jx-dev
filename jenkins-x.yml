@@ -86,36 +86,36 @@ pipelineConfig:
             - crd
             command: jx
             name: install-jx-crds
-          - args:
-            - step
-            - helm
-            - apply
-            - --boot
-            - --remote
-            - --no-vault
-            - --name
-            - velero
-            command: jx
-            dir: /workspace/source/systems/velero
-            env:
-            - name: DEPLOY_NAMESPACE
-              value: velero
-            name: install-velero
-          - args:
-            - step
-            - helm
-            - apply
-            - --boot
-            - --remote
-            - --no-vault
-            - --name
-            - velero-backups
-            command: jx
-            dir: /workspace/source/systems/velero-backups
-            env:
-            - name: DEPLOY_NAMESPACE
-              value: velero
-            name: install-velero-backups
+#          - args:
+#            - step
+#            - helm
+#            - apply
+#            - --boot
+#            - --remote
+#            - --no-vault
+#            - --name
+#            - velero
+#            command: jx
+#            dir: /workspace/source/systems/velero
+#            env:
+#            - name: DEPLOY_NAMESPACE
+#              value: velero
+#            name: install-velero
+#          - args:
+#            - step
+#            - helm
+#            - apply
+#            - --boot
+#            - --remote
+#            - --no-vault
+#            - --name
+#            - velero-backups
+#            command: jx
+#            dir: /workspace/source/systems/velero-backups
+#            env:
+#            - name: DEPLOY_NAMESPACE
+#              value: velero
+#            name: install-velero-backups
           - args:
             - step
             - helm
