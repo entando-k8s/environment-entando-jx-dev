@@ -116,21 +116,21 @@ pipelineConfig:
 #            - name: DEPLOY_NAMESPACE
 #              value: velero
 #            name: install-velero-backups
-          - args:
-            - step
-            - helm
-            - apply
-            - --boot
-            - --remote
-            - --no-vault
-            - --name
-            - jxing
-            command: jx
-            dir: /workspace/source/systems/jxing
-            env:
-            - name: DEPLOY_NAMESPACE
-              value: kube-system
-            name: install-nginx-controller
+#          - args:
+#            - step
+#            - helm
+#            - apply
+#            - --boot
+#            - --remote
+#            - --no-vault
+#            - --name
+#            - jxing
+#            command: jx
+#            dir: /workspace/source/systems/jxing
+#            env:
+#            - name: DEPLOY_NAMESPACE
+#              value: kube-system
+#            name: install-nginx-controller
           - args:
             - step
             - create
