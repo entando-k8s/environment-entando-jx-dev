@@ -2,6 +2,11 @@ autoUpdate:
   enabled: false
   schedule: ""
 bootConfigURL: https://github.com/entando-k8s/jenkins-x-boot-config
+buildPacks:
+  buildPackLibrary:
+    gitRef: master
+    gitURL: github.com/entando-k8s/jenkins-x-kubernetes
+    name: Entando
 cluster:
   clusterName: entando-jx
   devEnvApprovers:
