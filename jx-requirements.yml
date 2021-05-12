@@ -89,3 +89,8 @@ versionStream:
   ref: v1.0.303
   url: https://github.com/jenkins-x/jenkins-x-versions.git
 webhook: prow
+buildPacks:
+  buildPackLibrary:
+    name: "Entando"
+    gitURL: "github.com/entando-k8s/jenkins-x-kubernetes"
+    gitRef: "master"
