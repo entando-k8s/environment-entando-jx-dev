@@ -11,5 +11,3 @@ tekton:
 dex:
   certs:
     newApi: true
-velero:
-  enabled: false
