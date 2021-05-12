@@ -18,9 +18,3 @@ dependencies:
   repository: http://chartmuseum.jenkins-x.io
 - name: jenkins-x-platform
   repository: http://chartmuseum.jenkins-x.io
-- name: jx-app-statusbadge
-  repository: http://chartmuseum.jenkins-x.io
-  version: 0.0.9
-- name: jx-app-ui
-  repository: http://chartmuseum.jenkins-x.io
-  version: 0.1.36
