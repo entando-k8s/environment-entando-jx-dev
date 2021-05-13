@@ -1,0 +1,1140 @@
+apiVersion: v1
+data:
+  config.yaml: |
+    branch-protection:
+      orgs:
+        entando:
+          repos:
+            app-builder:
+              required_status_checks:
+                contexts:
+                - pr-build
+            entando-admin-console:
+              required_status_checks:
+                contexts:
+                - pr-build
+            entando-app-view-cms-default:
+              required_status_checks:
+                contexts:
+                - pr-build
+            entando-cms:
+              required_status_checks:
+                contexts:
+                - pr-build
+            entando-component-bundle-k8s-model:
+              required_status_checks:
+                contexts:
+                - pr-build
+            entando-core-bom:
+              required_status_checks:
+                contexts:
+                - pr-build
+            entando-core-parent:
+              required_status_checks:
+                contexts:
+                - pr-build
+            entando-docker-base-images:
+              required_status_checks:
+                contexts:
+                - pr-build
+            entando-engine:
+              required_status_checks:
+                contexts:
+                - pr-build
+            entando-keycloak:
+              required_status_checks:
+                contexts:
+                - pr-build
+            entando-keycloak-plugin:
+              required_status_checks:
+                contexts:
+                - pr-build
+            entando-maven-root:
+              required_status_checks:
+                contexts:
+                - pr-build
+            entando-pda-redhatpam-engine:
+              required_status_checks:
+                contexts:
+                - pr-build
+            entando-plugin-jacms:
+              required_status_checks:
+                contexts:
+                - pr-build
+            entando-plugin-jpcontentscheduler:
+              required_status_checks:
+                contexts:
+                - pr-build
+            entando-plugin-jpmail:
+              required_status_checks:
+                contexts:
+                - pr-build
+            entando-plugin-jpredis:
+              required_status_checks:
+                contexts:
+                - pr-build
+            entando-plugin-jpseo:
+              required_status_checks:
+                contexts:
+                - pr-build
+            entando-plugin-jpversioning:
+              required_status_checks:
+                contexts:
+                - pr-build
+            entando-portal-ui:
+              required_status_checks:
+                contexts:
+                - pr-build
+            entando-process-driven-apps:
+              required_status_checks:
+                contexts:
+                - pr-build
+            entando-process-driven-plugin:
+              required_status_checks:
+                contexts:
+                - pr-build
+            entando-spring-boot-parent:
+              required_status_checks:
+                contexts:
+                - pr-build
+            octo-easyclaim-mock:
+              required_status_checks:
+                contexts:
+                - pr-build
+            octo-easyclaim-server:
+              required_status_checks:
+                contexts:
+                - pr-build
+            pda-core-engine:
+              required_status_checks:
+                contexts:
+                - pr-build
+            pda-redhatpam-engine:
+              required_status_checks:
+                contexts:
+                - pr-build
+        entando-jx:
+          repos:
+            spring-boot-http-gradle:
+              required_status_checks:
+                contexts:
+                - pr-build
+            test:
+              required_status_checks:
+                contexts:
+                - pr-build
+        entando-k8s:
+          repos:
+            entando-component-manager:
+              required_status_checks:
+                contexts:
+                - pr-build
+            entando-de-app:
+              required_status_checks:
+                contexts:
+                - pr-build
+            entando-jx-maven-java11:
+              required_status_checks:
+                contexts:
+                - pr-build
+            entando-jx-nodejs11:
+              required_status_checks:
+                contexts:
+                - pr-build
+            entando-jx-nodejs12:
+              required_status_checks:
+                contexts:
+                - pr-build
+            entando-k8s-app-controller:
+              required_status_checks:
+                contexts:
+                - pr-build
+            entando-k8s-app-plugin-link-controller:
+              required_status_checks:
+                contexts:
+                - pr-build
+            entando-k8s-composite-app-controller:
+              required_status_checks:
+                contexts:
+                - pr-build
+            entando-k8s-controller-coordinator:
+              required_status_checks:
+                contexts:
+                - pr-build
+            entando-k8s-custom-model:
+              required_status_checks:
+                contexts:
+                - pr-build
+            entando-k8s-database-service-controller:
+              required_status_checks:
+                contexts:
+                - pr-build
+            entando-k8s-dbjob:
+              required_status_checks:
+                contexts:
+                - pr-build
+            entando-k8s-infrastructure-parent:
+              required_status_checks:
+                contexts:
+                - pr-build
+            entando-k8s-keycloak-controller:
+              required_status_checks:
+                contexts:
+                - pr-build
+            entando-k8s-operator-common:
+              required_status_checks:
+                contexts:
+                - pr-build
+            entando-k8s-plugin-controller:
+              required_status_checks:
+                contexts:
+                - pr-build
+            entando-k8s-service:
+              required_status_checks:
+                contexts:
+                - pr-build
+            entando-quarkus-parent:
+              required_status_checks:
+                contexts:
+                - pr-build
+            entando-spring-boot-parent:
+              required_status_checks:
+                contexts:
+                - pr-build
+            environment-entando-jx-dev:
+              required_status_checks:
+                contexts:
+                - promotion-build
+            environment-entando-jx-production:
+              required_status_checks:
+                contexts:
+                - promotion-build
+            environment-entando-jx-staging:
+              required_status_checks:
+                contexts:
+                - promotion-build
+            test:
+              required_status_checks:
+                contexts:
+                - pr-build
+            web-commons:
+              required_status_checks:
+                contexts:
+                - pr-build
+        ffleandro:
+          repos:
+            jx-quickstart:
+              required_status_checks:
+                contexts:
+                - pr-build
+      protect-tested-repos: true
+    github:
+      LinkURL: null
+    plank: 
+      job_url_template: https://raw.githubusercontent.com/entando-k8s/devops-results/logs/jenkins-x/logs/{{.Spec.Refs.Org}}/{{.Spec.Refs.Repo}}/PR-{{with index .Spec.Refs.Pulls 0}}{{.Number}}{{end}}/{{.Status.BuildID}}.log
+    pod_namespace: jx
+    postsubmits:
+      entando-jx/spring-boot-http-gradle:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      entando-jx/test:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      entando-k8s/entando-component-manager:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      entando-k8s/entando-de-app:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      entando-k8s/entando-jx-maven-java11:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      entando-k8s/entando-jx-nodejs11:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      entando-k8s/entando-jx-nodejs12:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      entando-k8s/entando-k8s-app-controller:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      entando-k8s/entando-k8s-app-plugin-link-controller:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      entando-k8s/entando-k8s-composite-app-controller:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      entando-k8s/entando-k8s-controller-coordinator:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      entando-k8s/entando-k8s-custom-model:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      entando-k8s/entando-k8s-database-service-controller:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      entando-k8s/entando-k8s-dbjob:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      entando-k8s/entando-k8s-infrastructure-parent:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      entando-k8s/entando-k8s-keycloak-controller:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      entando-k8s/entando-k8s-operator-common:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      entando-k8s/entando-k8s-plugin-controller:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      entando-k8s/entando-k8s-service:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      entando-k8s/entando-quarkus-parent:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      entando-k8s/entando-spring-boot-parent:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      entando-k8s/environment-entando-jx-dev:
+      - agent: tekton
+        branches:
+        - master
+        name: promotion
+        skip_report: true
+      entando-k8s/environment-entando-jx-production:
+      - agent: tekton
+        branches:
+        - master
+        name: promotion
+        skip_report: true
+      entando-k8s/environment-entando-jx-staging:
+      - agent: tekton
+        branches:
+        - master
+        name: promotion
+        skip_report: true
+      entando-k8s/test:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        run_if_changed: (?m)^[^p].*$
+        skip_report: true
+      entando-k8s/web-commons:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      entando/app-builder:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      entando/entando-admin-console:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      entando/entando-app-view-cms-default:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      entando/entando-cms:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        run_if_changed: (?m)^[^p].*$
+        skip_report: true
+      entando/entando-component-bundle-k8s-model:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      entando/entando-core-bom:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      entando/entando-core-parent:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      entando/entando-docker-base-images:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      entando/entando-engine:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      entando/entando-keycloak:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      entando/entando-keycloak-plugin:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      entando/entando-maven-root:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      entando/entando-pda-redhatpam-engine:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      entando/entando-plugin-jacms:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      entando/entando-plugin-jpcontentscheduler:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      entando/entando-plugin-jpmail:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      entando/entando-plugin-jpredis:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      entando/entando-plugin-jpseo:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      entando/entando-plugin-jpversioning:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      entando/entando-portal-ui:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      entando/entando-process-driven-apps:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      entando/entando-process-driven-plugin:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      entando/entando-spring-boot-parent:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      entando/octo-easyclaim-mock:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      entando/octo-easyclaim-server:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      entando/pda-core-engine:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      entando/pda-redhatpam-engine:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+      ffleandro/jx-quickstart:
+      - agent: tekton
+        branches:
+        - master
+        name: release
+        skip_report: true
+    presubmits:
+      entando-jx/spring-boot-http-gradle:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      entando-jx/test:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      entando-k8s/entando-component-manager:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      entando-k8s/entando-de-app:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      entando-k8s/entando-jx-maven-java11:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      entando-k8s/entando-jx-nodejs11:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      entando-k8s/entando-jx-nodejs12:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      entando-k8s/entando-k8s-app-controller:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      entando-k8s/entando-k8s-app-plugin-link-controller:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      entando-k8s/entando-k8s-composite-app-controller:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      entando-k8s/entando-k8s-controller-coordinator:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      entando-k8s/entando-k8s-custom-model:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      entando-k8s/entando-k8s-database-service-controller:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      entando-k8s/entando-k8s-dbjob:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      entando-k8s/entando-k8s-infrastructure-parent:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      entando-k8s/entando-k8s-keycloak-controller:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      entando-k8s/entando-k8s-operator-common:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      entando-k8s/entando-k8s-plugin-controller:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      entando-k8s/entando-k8s-service:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      entando-k8s/entando-quarkus-parent:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      entando-k8s/entando-spring-boot-parent:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      entando-k8s/environment-entando-jx-dev:
+      - agent: tekton
+        always_run: true
+        context: promotion-build
+        name: promotion-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      entando-k8s/environment-entando-jx-production:
+      - agent: tekton
+        always_run: true
+        context: promotion-build
+        name: promotion-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      entando-k8s/environment-entando-jx-staging:
+      - agent: tekton
+        always_run: true
+        context: promotion-build
+        name: promotion-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      entando-k8s/test:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      entando-k8s/web-commons:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      entando/app-builder:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      entando/entando-admin-console:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      entando/entando-app-view-cms-default:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      entando/entando-cms:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      entando/entando-component-bundle-k8s-model:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      entando/entando-core-bom:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      entando/entando-core-parent:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      entando/entando-docker-base-images:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      entando/entando-engine:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      entando/entando-keycloak:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      entando/entando-keycloak-plugin:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      entando/entando-maven-root:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      entando/entando-pda-redhatpam-engine:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      entando/entando-plugin-jacms:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      entando/entando-plugin-jpcontentscheduler:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      entando/entando-plugin-jpmail:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      entando/entando-plugin-jpredis:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      entando/entando-plugin-jpseo:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      entando/entando-plugin-jpversioning:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      entando/entando-portal-ui:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      entando/entando-process-driven-apps:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      entando/entando-process-driven-plugin:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      entando/entando-spring-boot-parent:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      entando/octo-easyclaim-mock:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      entando/octo-easyclaim-server:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      entando/pda-core-engine:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      entando/pda-redhatpam-engine:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+      ffleandro/jx-quickstart:
+      - agent: tekton
+        always_run: true
+        context: pr-build
+        name: pr-build
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
+    prowjob_namespace: jx
+    push_gateway:
+      serve_metrics: false
+    tide:
+      context_options:
+        from-branch-protection: true
+        required-if-present-contexts: null
+        skip-unknown-contexts: false
+      merge_method:
+        entando-jx/spring-boot-http-gradle: merge
+        entando-jx/test: merge
+        entando-k8s/entando-component-manager: merge
+        entando-k8s/entando-de-app: merge
+        entando-k8s/entando-jx-maven-java11: merge
+        entando-k8s/entando-jx-nodejs11: merge
+        entando-k8s/entando-jx-nodejs12: merge
+        entando-k8s/entando-k8s-app-controller: merge
+        entando-k8s/entando-k8s-app-plugin-link-controller: merge
+        entando-k8s/entando-k8s-composite-app-controller: merge
+        entando-k8s/entando-k8s-controller-coordinator: merge
+        entando-k8s/entando-k8s-custom-model: merge
+        entando-k8s/entando-k8s-database-service-controller: merge
+        entando-k8s/entando-k8s-dbjob: merge
+        entando-k8s/entando-k8s-infrastructure-parent: merge
+        entando-k8s/entando-k8s-keycloak-controller: merge
+        entando-k8s/entando-k8s-operator-common: merge
+        entando-k8s/entando-k8s-plugin-controller: merge
+        entando-k8s/entando-k8s-service: merge
+        entando-k8s/entando-quarkus-parent: merge
+        entando-k8s/entando-spring-boot-parent: merge
+        entando-k8s/environment-entando-jx-dev: merge
+        entando-k8s/environment-entando-jx-production: merge
+        entando-k8s/environment-entando-jx-staging: merge
+        entando-k8s/test: merge
+        entando-k8s/web-commons: merge
+        entando/app-builder: merge
+        entando/entando-admin-console: merge
+        entando/entando-app-view-cms-default: merge
+        entando/entando-cms: merge
+        entando/entando-component-bundle-k8s-model: merge
+        entando/entando-core-bom: merge
+        entando/entando-core-parent: merge
+        entando/entando-docker-base-images: merge
+        entando/entando-engine: merge
+        entando/entando-keycloak: merge
+        entando/entando-keycloak-plugin: merge
+        entando/entando-maven-root: merge
+        entando/entando-pda-redhatpam-engine: merge
+        entando/entando-plugin-jacms: merge
+        entando/entando-plugin-jpcontentscheduler: merge
+        entando/entando-plugin-jpmail: merge
+        entando/entando-plugin-jpredis: merge
+        entando/entando-plugin-jpseo: merge
+        entando/entando-plugin-jpversioning: merge
+        entando/entando-portal-ui: merge
+        entando/entando-process-driven-apps: merge
+        entando/entando-process-driven-plugin: merge
+        entando/entando-spring-boot-parent: merge
+        entando/octo-easyclaim-mock: merge
+        entando/octo-easyclaim-server: merge
+        entando/pda-core-engine: merge
+        entando/pda-redhatpam-engine: merge
+        ffleandro/jx-quickstart: merge
+      queries:
+      - labels:
+        - approved
+        missingLabels:
+        - do-not-merge
+        - do-not-merge/hold
+        - do-not-merge/work-in-progress
+        - needs-ok-to-test
+        - needs-rebase
+        repos:
+        - entando/app-builder
+        - entando/entando-admin-console
+        - entando/entando-app-view-cms-default
+        - entando/entando-cms
+        - entando/entando-component-bundle-k8s-model
+        - entando/entando-core-bom
+        - entando/entando-core-parent
+        - entando/entando-docker-base-images
+        - entando/entando-engine
+        - entando/entando-keycloak
+        - entando/entando-keycloak-plugin
+        - entando/entando-maven-root
+        - entando/entando-pda-redhatpam-engine
+        - entando/entando-plugin-jacms
+        - entando/entando-plugin-jpcontentscheduler
+        - entando/entando-plugin-jpmail
+        - entando/entando-plugin-jpredis
+        - entando/entando-plugin-jpseo
+        - entando/entando-plugin-jpversioning
+        - entando/entando-portal-ui
+        - entando/entando-process-driven-apps
+        - entando/entando-process-driven-plugin
+        - entando/entando-spring-boot-parent
+        - entando-jx/spring-boot-http-gradle
+        - entando-jx/test
+        - entando-k8s/entando-component-manager
+        - entando-k8s/entando-de-app
+        - entando-k8s/entando-jx-maven-java11
+        - entando-k8s/entando-jx-nodejs11
+        - entando-k8s/entando-jx-nodejs12
+        - entando-k8s/entando-k8s-app-controller
+        - entando-k8s/entando-k8s-app-plugin-link-controller
+        - entando-k8s/entando-k8s-composite-app-controller
+        - entando-k8s/entando-k8s-controller-coordinator
+        - entando-k8s/entando-k8s-custom-model
+        - entando-k8s/entando-k8s-database-service-controller
+        - entando-k8s/entando-k8s-dbjob
+        - entando-k8s/entando-k8s-infrastructure-parent
+        - entando-k8s/entando-k8s-keycloak-controller
+        - entando-k8s/entando-k8s-operator-common
+        - entando-k8s/entando-k8s-plugin-controller
+        - entando-k8s/entando-k8s-service
+        - entando-k8s/entando-quarkus-parent
+        - entando-k8s/entando-spring-boot-parent
+        - entando-k8s/environment-entando-jx-dev
+        - entando-k8s/environment-entando-jx-production
+        - entando-k8s/environment-entando-jx-staging
+        - entando-k8s/test
+        - entando-k8s/web-commons
+        - entando/octo-easyclaim-mock
+        - entando/octo-easyclaim-server
+        - entando/pda-core-engine
+        - entando/pda-redhatpam-engine
+        - ffleandro/jx-quickstart
+      - labels:
+        - updatebot
+        missingLabels:
+        - do-not-merge
+        - do-not-merge/hold
+        - do-not-merge/work-in-progress
+        - needs-ok-to-test
+        - needs-rebase
+        repos:
+        - entando/app-builder
+        - entando/entando-admin-console
+        - entando/entando-app-view-cms-default
+        - entando/entando-cms
+        - entando/entando-component-bundle-k8s-model
+        - entando/entando-core-bom
+        - entando/entando-core-parent
+        - entando/entando-docker-base-images
+        - entando/entando-engine
+        - entando/entando-keycloak
+        - entando/entando-keycloak-plugin
+        - entando/entando-maven-root
+        - entando/entando-pda-redhatpam-engine
+        - entando/entando-plugin-jacms
+        - entando/entando-plugin-jpcontentscheduler
+        - entando/entando-plugin-jpmail
+        - entando/entando-plugin-jpredis
+        - entando/entando-plugin-jpseo
+        - entando/entando-plugin-jpversioning
+        - entando/entando-portal-ui
+        - entando/entando-process-driven-apps
+        - entando/entando-process-driven-plugin
+        - entando/entando-spring-boot-parent
+        - entando-jx/spring-boot-http-gradle
+        - entando-jx/test
+        - entando-k8s/entando-component-manager
+        - entando-k8s/entando-de-app
+        - entando-k8s/entando-jx-maven-java11
+        - entando-k8s/entando-jx-nodejs11
+        - entando-k8s/entando-jx-nodejs12
+        - entando-k8s/entando-k8s-app-controller
+        - entando-k8s/entando-k8s-app-plugin-link-controller
+        - entando-k8s/entando-k8s-composite-app-controller
+        - entando-k8s/entando-k8s-controller-coordinator
+        - entando-k8s/entando-k8s-custom-model
+        - entando-k8s/entando-k8s-database-service-controller
+        - entando-k8s/entando-k8s-dbjob
+        - entando-k8s/entando-k8s-infrastructure-parent
+        - entando-k8s/entando-k8s-keycloak-controller
+        - entando-k8s/entando-k8s-operator-common
+        - entando-k8s/entando-k8s-plugin-controller
+        - entando-k8s/entando-k8s-service
+        - entando-k8s/entando-quarkus-parent
+        - entando-k8s/entando-spring-boot-parent
+        - entando-k8s/environment-entando-jx-dev
+        - entando-k8s/environment-entando-jx-production
+        - entando-k8s/environment-entando-jx-staging
+        - entando-k8s/test
+        - entando-k8s/web-commons
+        - entando/octo-easyclaim-mock
+        - entando/octo-easyclaim-server
+        - entando/pda-core-engine
+        - entando/pda-redhatpam-engine
+        - ffleandro/jx-quickstart
+      target_url: http://deck-jx.apps.serv.run
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2021-05-12T16:38:06Z"
+  name: config
+  namespace: jx
+  resourceVersion: "197273291"
+  selfLink: /api/v1/namespaces/jx/configmaps/config
+  uid: 6da5c4d2-b340-11eb-9daa-463e262dfb5e
