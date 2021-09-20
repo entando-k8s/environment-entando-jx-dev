@@ -4,7 +4,7 @@ pipelineConfig:
     release:
       pipeline:
         agent:
-          image: gcr.io/jenkinsxio/builder-jx
+          image: ghcr.io/jenkins-x/builder-go:2.1.155-778-patch3
         stages:
           - name: release
             steps:

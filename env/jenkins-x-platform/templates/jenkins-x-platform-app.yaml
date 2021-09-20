@@ -3,7 +3,7 @@ kind: App
 metadata:
   annotations:
     jenkins.io/chart-description: Jenkins X next gen cloud CI / CD platform for Kubernetes
-    jenkins.io/chart-repository: http://chartmuseum.jenkins-x.io
+    jenkins.io/chart-repository: https://jenkins-x-charts.github.io/v2
   creationTimestamp: null
   labels:
     jenkins.io/app-name: jenkins-x-platform

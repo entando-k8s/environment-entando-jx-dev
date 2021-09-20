@@ -4,4 +4,4 @@
 |---|---|
 | **Version** | 0.0.3877 |
 | **Description** | Jenkins X next gen cloud CI / CD platform for Kubernetes |
-| **Chart Repository** | http://chartmuseum.jenkins-x.io |
+| **Chart Repository** | https://jenkins-x-charts.github.io/v2 |
