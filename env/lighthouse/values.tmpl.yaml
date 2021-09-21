@@ -17,4 +17,7 @@ service:
 replicaCount: 2
 
 image:
-  repository: gcr.io/jenkinsxio/lighthouse
+  parentRepository: ghcr.io/jenkins-x
+  repository: ghcr.io/jenkins-x/lighthouse
+env:
+  JX_DEFAULT_IAMGE: ghcr.io/jenkins-x/builder-maven:2.1.155-778-patch3

@@ -5,11 +5,15 @@ dockerRegistry: "{{ .Requirements.cluster.registry }}"
 
 expose:
   enabled: false
+  Image: ghcr.io/jenkins-x/exposecontroller
+  ImageTag: 2.3.118
 
 JXBasicAuth: "{{ .Parameters.adminUser.username }}:{SHA}{{ .Parameters.adminUser.password | hashPassword }}"
 
 cleanup:
   enabled: false
+  Image: ghcr.io/jenkins-x/exposecontroller
+  ImageTag: 2.3.118
 
 chartmuseum:
 {{- if and (hasKey .Requirements "repository") (eq .Requirements.repository "bucketrepo") }}
@@ -171,6 +175,11 @@ PipelineSecrets:
 
 {{- if eq .Requirements.webhook "lighthouse" }}
 controllerbuild:
+  image:
+    repository: ghcr.io/jenkins-x/builder-jx
+    tag: 2.1.155-778-patch3
+    env:
+      BUILDER_JX_IMAGE: ghcr.io/jenkins-x/builder-jx:2.1.155-778-patch3
   enabled: true
   args:
   - "controller"
@@ -180,6 +189,27 @@ controllerbuild:
   - "--git-credentials"
   - "--verbose"
 {{- end }}
+
+postinstalljob:
+  image:
+    repository: ghcr.io/jenkins-x/builder-jx
+    tag: 2.1.155-778-patch3
+  env:
+    BUILDER_JX_IMAGE: ghcr.io/jenkins-x/builder-jx:2.1.155-778-patch3
+
+controllerrole:
+  image:
+    repository: ghcr.io/jenkins-x/builder-jx
+    tag: 2.1.155-778-patch3
+  env:
+    BUILDER_JX_IMAGE: ghcr.io/jenkins-x/builder-jx:2.1.155-778-patch3
+
+gcpreviews:
+  image:
+    repository: ghcr.io/jenkins-x/builder-jx
+    tag: 2.1.155-778-patch3
+  env:
+    BUILD_JX_IMAGE: ghcr.io/jenkins-x/builder-jx:2.1.155-778-patch3
 
 gcactivities:
   args:
@@ -191,10 +221,17 @@ gcactivities:
     enabled: true
     schedule: "0/30 * * * *"
   image:
-    repository: gcr.io/jenkinsxio/builder-jx
-    tag: 0.1.658
+    repository: ghcr.io/jenkins-x/builder-jx
+    tag: 2.1.155-778-patch3
+  env:
+    BUILDER_JX_IMAGE: ghcr.io/jenkins-x/builder-jx:2.1.155-778-patch3
 
 gcpods:
+  image:
+    repository: ghcr.io/jenkins-x/builder-jx
+    tag: 2.1.155-778-patch3
+  env:
+    BUILDER_JX_IMAGE: ghcr.io/jenkins-x/builder-jx:2.1.155-778-patch3
   cronjob:
     enabled: true
     schedule: "0/30 * * * *"
