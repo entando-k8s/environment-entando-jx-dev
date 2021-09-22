@@ -1,5 +1,8 @@
 buildPack: none
 pipelineConfig:
+  env:
+  - name: CHART_REPOSITORY
+    value: https://jenkins-x-charts.github.io/repo
   pipelines:
     pullRequest:
       pipeline:
