@@ -1,20 +1,26 @@
 dependencies:
 - name: jxboot-resources
   repository: https://jenkins-x-charts.github.io/v2
+  version: 0.0.43
 - alias: tekton
   name: tekton
   repository: https://jenkins-x-charts.github.io/v2
+  version: 0.0.63
 - alias: prow
   condition: prow.enabled
   name: prow
   repository: https://jenkins-x-charts.github.io/v2
+  version: 0.0.173
 - alias: lighthouse
   condition: lighthouse.enabled
   name: lighthouse
   repository: https://jenkins-x-charts.github.io/v2
+  version: 0.0.121
 - alias: bucketrepo
   condition: bucketrepo.enabled
   name: bucketrepo
   repository: https://jenkins-x-charts.github.io/v2
+  version: 0.1.42
 - name: jenkins-x-platform
   repository: https://jenkins-x-charts.github.io/v2
+  version: 2.0.2411
