@@ -23,4 +23,7 @@ dependencies:
   version: 0.1.42
 - name: jenkins-x-platform
   repository: https://jenkins-x-charts.github.io/v2
-  version: 2.0.2411
+  version: 2.0.2412
+- name: jxboot-helmfile-resources
+  repository: https://jenkins-x-charts.github.io/v2
+  version: 1.0.31
