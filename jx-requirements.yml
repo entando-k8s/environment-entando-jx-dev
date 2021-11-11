@@ -1,7 +1,7 @@
 autoUpdate:
   enabled: false
   schedule: ""
-bootConfigURL: https://github.com/entando-k8s/jenkins-x-boot-config
+bootConfigURL: https://github.com/entando-k8s/environment-entando-jx-dev
 cluster:
   clusterName: entando-jx
   devEnvApprovers:
@@ -84,6 +84,6 @@ velero:
   schedule: ""
   ttl: ""
 versionStream:
-  ref: v1.0.610
+  ref: 552678aadcd3036a51f72c0e8732695dff259ffe
   url: https://github.com/jenkins-x/jenkins-x-versions.git
 webhook: prow
