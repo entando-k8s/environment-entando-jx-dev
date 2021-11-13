@@ -6,4 +6,9 @@ init:
 
 build: clean init
 	jx step helm build --boot --provider-values-dir=../kubeProviders
+	helm lint .
+	
+clean:
+        rm -rf charts
+	rm -rf requirements.lock
 
